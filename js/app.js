@@ -12,6 +12,7 @@ const cutSound = new Howl({
 
 let isPlaying = false;
 let cakeCut = false;
+let canCut = false;
 
 // --- Elements ---
 const landingScreen = document.getElementById('landing');
@@ -46,7 +47,9 @@ startBtn.addEventListener('click', () => {
         gsap.from("#greeting1", { y: -50, opacity: 0, duration: 1, ease: "power3.out" });
         gsap.from("#bithday-name", { scale: 0.5, opacity: 0, duration: 1.5, ease: "elastic.out(1, 0.5)", delay: 0.3 });
         gsap.from(".candles-bg", { opacity: 0, duration: 2, delay: 1 });
-        gsap.from("#cake-container", { y: 100, opacity: 0, duration: 1.5, ease: "power3.out", delay: 0.8 });
+        gsap.from("#cake-container", { y: 100, opacity: 0, duration: 1.5, ease: "power3.out", delay: 0.8, onComplete: () => {
+            canCut = true;
+        }});
         
         startBalloons();
     }, 500);
@@ -99,6 +102,7 @@ function drawTrail() {
 }
 
 function handleSwipePoint(x, y) {
+    if (!canCut) return;
     points.push({ x, y });
     
     // Keep trail short
