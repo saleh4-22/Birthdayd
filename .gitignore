@@ -1,0 +1,6 @@
+# Ignore the compiled/zipped version of the app to avoid redundancy in the repo
+Rains_Birthday_App.zip
+
+# System files
+.DS_Store
+Thumbs.db

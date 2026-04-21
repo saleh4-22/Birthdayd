@@ -1,0 +1,183 @@
+PRODUCT REQUIREMENTS DOCUMENT (PRD)
+
+Project Name: Rain's 21st Birthday Interactive Website
+
+--------------------------------------------------
+
+1. PRODUCT OVERVIEW
+
+This is a mobile-first interactive birthday website created to celebrate Rain’s 21st birthday. The website focuses on a visually rich and emotional experience with touch-based interactions, animations, music, and celebration effects.
+
+The main highlight is a touch-controlled cake cutting animation, supported by balloons, glitter effects, candle background, and birthday music.
+
+--------------------------------------------------
+
+2. OBJECTIVES
+
+- Create a memorable digital birthday experience
+- Enable interactive touch-based engagement
+- Deliver a modern and premium UI/UX
+- Provide an emotional and personalized experience
+- Ensure smooth performance on Android smartphones
+
+--------------------------------------------------
+
+3. TARGET PLATFORM
+
+Primary Platform: Android mobile browsers  
+Screen Size: 360px – 420px width  
+Orientation: Portrait (vertical)  
+Optional: Progressive Web App (PWA)
+
+--------------------------------------------------
+
+4. CORE FEATURES
+
+4.1 Interactive Cake Cutting
+- Display a realistic birthday cake at the center
+- Knife follows user touch or swipe gesture
+- Smooth slicing animation
+- On cut:
+  - Cake splits into slices
+  - Glitter and confetti explosion
+  - Soft cutting sound effect
+
+4.2 Balloon Interaction
+- Floating balloons across the screen
+- Tap to pop balloons
+- On pop:
+  - Confetti/glitter burst
+  - Pop sound effect
+- Continuous floating animation
+
+4.3 Birthday Music Player
+- Play "Happy Birthday" song
+- Controls:
+  - Play / Pause
+  - Progress bar
+  - Volume toggle
+- Auto-play after first user interaction
+
+4.4 Candle Background Animation
+- Animated candles with glowing flame
+- Subtle flickering light effect
+- Warm ambient background
+
+4.5 Glitter & Confetti Effects
+- Triggered by:
+  - Cake cutting
+  - Balloon popping
+- Uses lightweight particle animations
+- Color theme: Gold / Pink / Purple
+
+4.6 Birthday Message Section
+- Display message: "Happy 21st Birthday Rain"
+- Optional effects:
+  - Typewriter animation
+  - Fade-in transitions
+
+--------------------------------------------------
+
+5. USER FLOW
+
+1. Landing Screen
+2. Animated Birthday Greeting appears
+3. Music starts (on user interaction)
+4. Cake appears with instruction: "Swipe to cut the cake"
+5. User cuts cake → glitter/confetti animation
+6. Balloons float → user taps to pop
+7. Final birthday message displayed
+
+--------------------------------------------------
+
+6. UI / UX DESIGN
+
+Design Style:
+- Elegant and festive
+- Premium look (not cartoonish)
+
+Color Theme:
+- Primary: Pink / Purple
+- Accent: Gold
+- Background: Dark gradient (black/purple)
+
+Typography:
+- Script font for "Rain"
+- Clean sans-serif for other text
+
+Animations:
+- Smooth and responsive (target 60fps)
+- Optimized for mobile devices
+
+--------------------------------------------------
+
+7. TECHNICAL REQUIREMENTS
+
+Frontend Technologies:
+- HTML5
+- CSS3 (animations, gradients)
+- JavaScript
+
+Recommended Libraries:
+- GSAP (animations)
+- Lottie (lightweight animations)
+- Howler.js (audio)
+
+Touch Interaction:
+- Use touchstart, touchmove, touchend
+- Knife follows finger movement
+- Detect collision with cake for slicing
+
+Performance Optimization:
+- Compress images
+- Minimize JavaScript usage
+- Use lightweight assets
+- Ensure fast loading time
+
+--------------------------------------------------
+
+8. AUDIO REQUIREMENTS
+
+- Background music: Happy Birthday song
+- Sound effects:
+  - Balloon pop
+  - Cake cutting
+  - Celebration chime
+
+--------------------------------------------------
+
+9. RESPONSIVENESS
+
+- Optimized for Android Chrome browser
+- Works on low to mid-range devices
+- No horizontal scrolling
+
+--------------------------------------------------
+
+10. OPTIONAL FEATURES
+
+- Photo gallery of Rain
+- Video message section
+- Countdown timer before birthday reveal
+- Share button (WhatsApp / Facebook)
+- Surprise popup after cake cutting
+
+--------------------------------------------------
+
+11. SUCCESS METRICS
+
+- Smooth performance without lag
+- High user interaction (cake cutting, balloon popping)
+- Positive emotional user experience
+- Fully functional on Android devices
+
+--------------------------------------------------
+
+12. FUTURE SCOPE
+
+- Reusable birthday template system
+- Theme customization options
+- Media upload support
+- Convert to Android app (WebView APK)
+
+--------------------------------------------------
